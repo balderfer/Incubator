@@ -13,8 +13,8 @@ $brand-primary:									#068894;
 
 @import 'bootstrap';
 
-.right {
-	text-align: right;
+.center {
+	text-align: center;
 }
 
 .left {
@@ -23,13 +23,4 @@ $brand-primary:									#068894;
 
 .navbar-brand {
 	font-weight: bold;
-}
-
-body {
-     margin: 0;
-     background: url('carousel2.jpg');
-     background-size: cover;
-     background-repeat:no-repeat;
-     display: compact;
-     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
