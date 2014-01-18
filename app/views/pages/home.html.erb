@@ -1,12 +1,19 @@
-<div class="jumbotron center">
-	<h1>Welcome to Incubator!</h1>
-	<% if user_signed_in? %>
-		<p>Welcome to the member's center!</p>
-	<% else %>
-		<p>This is the beginning of a project that will change the Startup scene across the country.</p>
-		<p>
-			<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-		</p>
+<div class="jumbotron">
+
+	<div class="row">
+		<div class="col-md-3">
+			<img src="/assets/hatchingegg.png" alt="" class="img-responsive">
+		</div>
+		<div class="col-md-9">
+			<% if user_signed_in? %>
+				<h1>Welcome back!</h1>
+			<% else %>
+				<h1>Get started today!</h1>
+				<p>This is the beginning of a project that will change the Startup scene across the country.</p>
+				<p>
+					<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+					<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+				</p>
+		</div>
 	<% end %>
 </div>
